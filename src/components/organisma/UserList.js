@@ -16,7 +16,7 @@ export const UserListComponent = ({user}) => {
   const noAward = user.index > 2;
 
   const onClickUser = () => {
-    Alert.alert(
+    Alert.alert('',
       `${user.item.name.first + ' ' + user.item.name.last}\n${
         user.item.login.username
       }\n${user.item.email}\n${user.item.location.street.name} ${

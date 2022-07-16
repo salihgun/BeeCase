@@ -1,5 +1,6 @@
-import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import React from 'react'
+import {View, StyleSheet, Text} from 'react-native'
+import Layout from '../../resources/constants/Layout'
 
 export const UserInfo = ({username, name}) => {
   return (
@@ -7,18 +8,18 @@ export const UserInfo = ({username, name}) => {
       <Text style={styles.usernameText}>{username}</Text>
       <Text style={styles.subText}>{name.toLowerCase()}</Text>
     </View>
-  );
-};
+  )
+}
 const styles = StyleSheet.create({
   container: {
     marginLeft: 15,
   },
   usernameText: {
     color: 'black',
-    fontSize: 15,
+    fontSize: Layout.width / 28,
   },
   subText: {
     color: 'rgba(0,0,0,0.8)',
-    fontSize: 15,
+    fontSize: Layout.width / 28,
   },
-});
+})
